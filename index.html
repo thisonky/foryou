@@ -2,7 +2,6 @@
 <html>
 
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -42,7 +41,7 @@
                     {
                         src: "images/book2/page5.jpg",
                         thumb: "images/book2/thumb5.jpg",
-                        title: "Page four"
+                        title: "Page five"
                     },
                     {
                         src: "images/book2/page6.jpg",
@@ -51,20 +50,42 @@
                     }
                 ]
             });
-
-        })
+        });
     </script>
 
+    <style>
+        /* Tambahkan beberapa gaya untuk tombol */
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button-container button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50; /* Warna latar belakang tombol */
+            color: white; /* Warna teks tombol */
+            border: none; /* Menghilangkan border */
+            border-radius: 5px; /* Sudut membulat */
+            transition: background-color 0.3s; /* Efek transisi */
+        }
+
+        .button-container button:hover {
+            background-color: #45a049; /* Warna latar belakang saat hover */
+        }
+    </style>
 </head>
 
 <body>
     <div id="container"></div>
 
-    <div style="text-align: center; margin-top: 20px;">
+    <div class="button-container">
         <a href="https://thisonky.github.io/pesan" target="_blank">
-            <button style="padding: 10px 20px; font-size: 16px;">Baca Pesan</button>
+            <button>Baca Pesan</button>
         </a>
     </div>
+
 </body>
 
 </html>
