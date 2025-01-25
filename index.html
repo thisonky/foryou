@@ -48,16 +48,25 @@
                         thumb: "images/book2/thumb6.jpg",
                         title: "Last Page, But I Love You Unlimited Pinta Swara Pangastuti ku❤"
                     }
-                ]
+                ],
+                onLastPage: function () {
+                    // Menampilkan tombol setelah halaman terakhir
+                    $(".button-container").fadeIn();
+                }
             });
+
+            // Sembunyikan tombol saat halaman dimuat
+            $(".button-container").hide();
         });
     </script>
 
     <style>
-        /* Tambahkan beberapa gaya untuk tombol */
+        /* Gaya untuk tombol */
         .button-container {
             text-align: center;
             margin-top: 20px;
+            display: none; /* Sembunyikan tombol secara default */
+            z-index: 1000; /* Pastikan tombol di atas elemen lain */
         }
 
         .button-container button {
@@ -78,14 +87,11 @@
 </head>
 
 <body>
-    <div id="container"></div>
-
+    <div ```html
+    id="container"></div>
     <div class="button-container">
-    <a href="https://thisonky.github.io/pesan" target="_blank">
-        <button>Baca Pesan</button>
-    </a>
-</div>
-
+        <button onclick="alert('Pesan dibaca!')">Baca Pesan</button>
+    </div>
 </body>
 
 </html>
